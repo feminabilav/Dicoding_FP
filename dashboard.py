@@ -56,3 +56,15 @@ byday_reg = create_byday_reg(day_df)
 byweather = create_byweather(hour_df)
 
 st.header('Final Project with Bike Sharing Dataset :technologist:')
+
+plt.figure(figsize=(10, 5))
+plt.plot(
+    bymonth["mnth"],
+    bymonth["cnt"],
+    marker='o', 
+    linewidth=2,
+    color="#72BCD4"
+)
+plt.title("Total User per Month (2012)", loc="center", fontsize=20)
+
+plt.show()
